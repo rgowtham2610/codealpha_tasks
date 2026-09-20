@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FrameFlow — Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="container" id="mainContainer">
+
+    <header>
+      <div class="brand-row">
+        <div>
+          <div class="eyebrow">Visual archive / 2026</div>
+          <h1>IMAGE <span style="color:var(--accent)">GALLERY</span></h1>
+          <p class="intro">
+            A responsive image gallery with categories, smooth hover effects,
+            animated filtering and a full-screen lightbox.
+          </p>
+        </div>
+
+        <div class="count" aria-live="polite">
+          <span id="photoCount">8</span> photos
+        </div>
+      </div>
+
+      <nav class="filters" aria-label="Image categories">
+        <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter-btn" data-filter="nature" aria-pressed="false">Nature</button>
+        <button class="filter-btn" data-filter="urban" aria-pressed="false">Urban</button>
+        <button class="filter-btn" data-filter="abstract" aria-pressed="false">Abstract</button>
+      </nav>
+    </header>
+
+    <section class="gallery" id="gallery" aria-label="Photo gallery">
+
+      <article class="card" role="button" tabindex="0" data-category="nature"
+        data-title="Golden Horizon"
+        data-subtitle="Nature / Evening"
+        aria-haspopup="dialog"
+        aria-label="View Golden Horizon, Nature / Evening">
+        <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1400&q=85" alt="Golden landscape at sunset over mountains">
+        <div class="card-info">
+          <span class="category">Nature</span>
+          <div class="card-title">Golden Horizon</div>
+          <div class="card-subtitle">Nature / Evening</div>
+        </div>
+      </article>
+
+      <article class="card" role="button" tabindex="0" data-category="urban"
+        data-title="City Geometry"
+        data-subtitle="Urban / Architecture"
+        aria-haspopup="dialog"
+        aria-label="View City Geometry, Urban / Architecture">
+        <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1200&q=85" alt="City buildings with modern architectural lines">
+        <div class="card-info">
+          <span class="category">Urban</span>
+          <div class="card-title">City Geometry</div>
+          <div class="card-subtitle">Urban / Architecture</div>
+        </div>
+      </article>
+
+      <article class="card" role="button" tabindex="0" data-category="abstract"
+        data-title="Liquid Light"
+        data-subtitle="Abstract / Color"
+        aria-haspopup="dialog"
+        aria-label="View Liquid Light, Abstract / Color">
+        <img src="https://images.unsplash.com/photo-1557682250-33bd709cbe85?auto=format&fit=crop&w=1000&q=85" alt="Abstract fluid purple and blue waves">
+        <div class="card-info">
+          <span class="category">Abstract</span>
+          <div class="card-title">Liquid Light</div>
+          <div class="card-subtitle">Abstract / Color</div>
+        </div>
+      </article>
+
+      <article class="card" role="button" tabindex="0" data-category="nature"
+        data-title="Into The Wild"
+        data-subtitle="Nature / Forest"
+        aria-haspopup="dialog"
+        aria-label="View Into The Wild, Nature / Forest">
+        <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1400&q=85" alt="Misty green pine forest">
+        <div class="card-info">
+          <span class="category">Nature</span>
+          <div class="card-title">Into The Wild</div>
+          <div class="card-subtitle">Nature / Forest</div>
+        </div>
+      </article>
+
+      <article class="card" role="button" tabindex="0" data-category="urban"
+        data-title="Night Lines"
+        data-subtitle="Urban / Night"
+        aria-haspopup="dialog"
+        aria-label="View Night Lines, Urban / Night">
+        <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1200&q=85" alt="City skyline and highway light trails at night">
+        <div class="card-info">
+          <span class="category">Urban</span>
+          <div class="card-title">Night Lines</div>
+          <div class="card-subtitle">Urban / Night</div>
+        </div>
+      </article>
+
+      <article class="card" role="button" tabindex="0" data-category="abstract"
+        data-title="Neon Pulse"
+        data-subtitle="Abstract / Neon"
+        aria-haspopup="dialog"
+        aria-label="View Neon Pulse, Abstract / Neon">
+        <img src="https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&w=1000&q=85" alt="Abstract vibrant neon curved lines">
+        <div class="card-info">
+          <span class="category">Abstract</span>
+          <div class="card-title">Neon Pulse</div>
+          <div class="card-subtitle">Abstract / Neon</div>
+        </div>
+      </article>
+
+      <article class="card" role="button" tabindex="0" data-category="nature"
+        data-title="Blue Escape"
+        data-subtitle="Nature / Ocean"
+        aria-haspopup="dialog"
+        aria-label="View Blue Escape, Nature / Ocean">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=85" alt="Calm turquoise ocean water and sandy beach">
+        <div class="card-info">
+          <span class="category">Nature</span>
+          <div class="card-title">Blue Escape</div>
+          <div class="card-subtitle">Nature / Ocean</div>
+        </div>
+      </article>
+
+      <article class="card" role="button" tabindex="0" data-category="urban"
+        data-title="Concrete Stories"
+        data-subtitle="Urban / Street"
+        aria-haspopup="dialog"
+        aria-label="View Concrete Stories, Urban / Street">
+        <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=1000&q=85" alt="Bustling urban street with historic buildings">
+        <div class="card-info">
+          <span class="category">Urban</span>
+          <div class="card-title">Concrete Stories</div>
+          <div class="card-subtitle">Urban / Street</div>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview" aria-hidden="true">
+
+    <button class="close" id="closeBtn" aria-label="Close lightbox">×</button>
+    <button class="nav prev" id="prevBtn" aria-label="Previous image">‹</button>
+    <button class="nav next" id="nextBtn" aria-label="Next image">›</button>
+
+    <div class="lightbox-content">
+      <img class="lightbox-img" id="lightboxImg" src="" alt="">
+      <div class="lightbox-caption">
+        <strong id="lightboxTitle"></strong>
+        <div id="lightboxSubtitle"></div>
+        <div class="counter" id="lightboxCounter" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
